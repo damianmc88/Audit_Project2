@@ -49,28 +49,40 @@ body{background-color: #0a7986;
 h1{
     color: #fcc751;
      background-color: #0a7986;
-     font-family: Georgia, 'Times New Roman', Times, serif;
-     font-weight: bold;
+     font-family: 'Avenir';
+     font-size: 24px; 
+     font-style: normal; 
+     font-variant: normal; 
+     font-weight: 700; 
+     line-height: 26.4px;
 }
 
 h2{
     color: #fcc751;
-     background-color:#0a7986;
-     font-family: Georgia, 'Times New Roman', Times, serif;
-     font-weight: bold;
+    background-color:#0a7986;
+    font-family: 'Avenir';
+    font-size: 18px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 15.4px; 
 }
 
 h3{
-        color: rgb(12, 173, 167);
-         background-color:#0a7986;
-         font-family: Georgia, 'Times New Roman', Times, serif;
-         font-weight: bold;
+    color: rgb(12, 173, 167);
+    background-color:#0a7986;
+    font-family: 'Avenir'; 
+    font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 15.4px;
     }
 
 
 p {
     color: #e84678;
-    font-family: sans-serif;
+    font-family: 'Avenir';
     font-size: 12;
     background-color:#0a7986;
     line-height: 2;
