@@ -2,11 +2,13 @@ import pandas as pd
 import numpy as np
 from flask import Flask, render_template, redirect 
 import sqlalchemy
+from flask import jsonify
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine
 from flask_sqlalchemy import SQLAlchemy
 import os
+import sqlite3
 
 app = Flask(__name__)
 
@@ -14,7 +16,15 @@ app = Flask(__name__)
 # Database Setup
 #################################################
 
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///audit2.sqlite"
+# conn = sqlite3.connect('db/audit2.sqlite') c = conn.cursor()
+# app = Flask(__name__)
+
+# @app.route('/') def index():    
+#  c.execute('SELECT * FROM audit_id')    
+#  return render_template('index.html', rows = c.fetchall())
+
+
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///db/audit2.sqlite"
 db = SQLAlchemy(app)
 
 # reflect an existing database into a new model
@@ -23,13 +33,36 @@ Base = automap_base()
 Base.prepare(db.engine, reflect=True)
 
 # Save references to each table
-# audit_data = Base.classes.myData
+# Samples_Metadata = Base.classes.sample_metadata
+# Samples = Base.classes.samples
 
-@app.route("/")
+@app.route('/')
 def index():
+    return render_template('index.html')
+
+@app.route("/json_endpoint")
+def json_data():
     """Return the homepage."""
-    full_filename = os.path.join(app.config['SQLALCHEMY_DATABASE_URI'], 'user_image')
-    return render_template("index.html", user_image = "/Users/damia/Desktop/Audit_Project2/templates/flamingo.png")
+    data = db.engine.execute("SELECT * FROM audit_type ")
+    cols = data.keys()
+    rows = data.fetchall()
+    to_return = []
+    for r in rows:
+        to_return.append(
+          dict(zip(cols, r))  
+        )
+    return jsonify(to_return)
+
+
+@app.route('/json/request_channel')
+def get_requst_channel():
+    """ Returns count of audits by request_channel"""
+    data = db.engine.execute("SELECT request_channel, count(*) as requests FROM audit_type GROUP BY 1 ")
+    cols = data.keys()
+    rows = data.fetchall()
+    for_return = [dict(x) for x in rows]
+    return jsonify(for_return)
+
 
 
 # @app.route("/names")
