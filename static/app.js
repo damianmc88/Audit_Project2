@@ -32,15 +32,17 @@ function circleGet() {
 }
 
 // Import data Here
-var allData = d3.json('/json_endpoint').then(data => {
+d3.json('/json_endpoint').then(data => {
     console.log(data)
-    return data;
-})
+    allData = data;
 
 
-var yAxis1 = allData.forEach(function(d) {
+
+var yAxis1 = allData.map(function(d) {
     d.num_records_reviewed = +d.num_records_reviewed
-    console.log(num_records_reviewed)
+    console.log('hellloooo')
+    return 
+})
 
 svg.append("g").attr("class", "xAxisText");
 var xAxisText = d3.select(".xAxisText");
