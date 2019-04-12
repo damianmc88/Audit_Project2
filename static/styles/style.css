@@ -1,35 +1,33 @@
 h1{
-    color: #fcc751;
-    background-color: #0a7986;
+    color: #e84678;
+    background-color: rgb(12, 173, 167);
     font-family: 'Avenir', Helvetica, sans-serif;
     font-weight: bold;
 }
 
 h2{
-    color: #fcc751;
-    background-color:#0a7986;
+    color: #e84678;
+    background-color:rgb(12, 173, 167);
     font-family: 'Avenir', Helvetica, sans-serif;
     font-weight: bold;
 }
 
 h3{
     color: rgb(12, 173, 167);
-    background-color:#0a7986;
+    background-color:rgb(12, 173, 167);
     font-family: 'Avenir', Helvetica, sans-serif;
     font-weight: bold;
     }
-
 
 p {
     color: #e84678;
     font-family: 'Avenir', Helvetica, sans-serif;
     font-size: 12;
-    background-color:#0a7986;
+    background-color:rgb(12, 173, 167);
     line-height: 2;
  }
-
  .container{
-     background-color: #0a7986;
+     background-color: rgb(12, 173, 167);
      padding-top: 30px;
      padding-left: 30px;
      padding-right: 30px;
@@ -37,12 +35,16 @@ p {
  }
 
  .navbar-brand {
-    color: #0a7986;
+    color: rgb(12, 173, 167);
     background-color: rgb(12, 173, 167);
     font-family: 'Avenir', Helvetica, sans-serif;
     font-weight: bold;
 }
 
 .footer {
-    background-color: rgb(12, 173, 167);
+    color: #e84678;
+    font-family: 'Avenir', Helvetica, sans-serif;
+    font-size: 12;
+    background-color:rgb(12, 173, 167);
+    line-height: 2;
 }
