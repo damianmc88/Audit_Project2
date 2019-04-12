@@ -73,13 +73,13 @@ d3.json('/json_endpoint').then(data => {
             })
             .style("fill", function(d,i) {
                 if (d.data.audit_team =="Internal"){
-                  return "#f18491"
+                  return "#e84678"
                 }
                 else if (d.data.audit_team == "External"){
-                  return "#1e3cd6"
+                  return "#022682"
                 }
                 else {
-                  return "f9f1e0"
+                  return "#840853"
                 }
 
               // console.log(d.data.audit_team)
@@ -116,169 +116,4 @@ d3.json('/json_endpoint').then(data => {
     d3.select(self.frameElement)
     .style("height", diameter + "px");
 
-  
-    
-    // console.log(bubble(nodes).descendants())
-// var yAxis1 = allData.map(function(d) {
-//     d.num_records_reviewed = +d.num_records_reviewed
-//     console.log('hellloooo')
-     
-// })
-
-// svg.append("g").attr("class", "xAxisText");
-// var xAxisText = d3.select(".xAxisText");
-
-// function xAxisTextRefresh() {
-//   xAxisText.attr(
-//     "transform",
-//     "translate(" +
-//       ((width - labelArea) / 2 + labelArea) +
-//       ", " +
-//       (height - margin - tPadBot) +
-//       ")"
-//   );
-// }
-// xAxisTextRefresh();
-
-// xAxisText
-//   .append("text")
-//   .attr("y", yAxis1)
-//   .attr("data-name", "audits")
-//   .attr("data-axis", "x")
-//   .attr("class", "aText active x")
-//   .text("Total Reviews");
-
-// var leftTextX = margin + tPadLeft;
-// var leftTextY = (height + labelArea) / 2 - labelArea;
-
-
-// var xAxis = allData.forEach(function(d) {
-//     d.received_date
-// })
-
-// svg.append("g").attr("class", "yAxisText");
-
-// var yAxisText = d3.select(".yAxisText");
-
-// function yTextRefresh() {
-//   yAxisText.attr(
-//     "transform",
-//     "translate(" + leftTextX + ", " + leftTextY + ")rotate(-90)"
-//   );
-// }
-// yTextRefresh();
-
-// yAxisText
-//   .append("text")
-//   .attr("y", -26)
-//   .attr("data-name", "date")
-//   .attr("data-axis", "y")
-//   .attr("class", "aText active y")
-//   .text("Date");
-
-//   d3.json('/json_endpoint').then(data => {
-//     visualize(data);
-//   });
-
-//   function visualize(theData) {
-//     var currentX = "audits";
-//     var currentY = "date";
-//     var xMin;
-//     var xMax;
-//     var yMin;
-//     var yMax;
-
-//     // forEach function to call individual parts of the json
-//     // healthData.forEach(function(d){
-//         // d.heatlcare = +d.healthcare;
-//     // })
-
-//     var toolTip = d3.tooltip()
-//     .attr("class", "d3-tip")
-//     .offset([40, -60])
-//     .html(function(d) {
-//       console.log(d)
-//       var theX;
-//       var theState = "<div>" + d.state + "</div>";
-//       var theY = "<div>" + currentY + ": " + d[currentY] + "%</div>";
-//       if (currentX === "poverty") {
-//         theX = "<div>" + currentX + ": " + d[currentX] + "%</div>";
-//       }
-//       else {
-//           currentX +
-//           ": " +
-//           parseFloat(d[currentX]).toLocaleString("en") +
-//           "</div>";
-//       }
-//       return theState + theX + theY;
-//     });
-//   svg.call(toolTip);
-
-//   function xMinMax() {
-//     xMin = d3.min(theData, function(d) {
-//       return parseFloat(d[currentX]) * 0.90;
-//     });
-//     xMax = d3.max(theData, function(d) {
-//       return parseFloat(d[currentX]) * 1.10;
-//     });
-//   }
-
-//   function yMinMax() {
-//     yMin = d3.min(theData, function(d) {
-//       return parseFloat(d[currentY]) * 0.90;
-//     });
-//     yMax = d3.max(theData, function(d) {
-//       return parseFloat(d[currentY]) * 1.10;
-//     });
-//   }
-
-// //   function labelChange(axis, clickedText) {
-// //     d3.selectAll(".aText")
-// //       .filter("." + axis)
-// //       .filter(".active")
-// //       .classed("active", false)
-// //       .classed("inactive", true);
-
-// xMinMax();
-// yMinMax();
-
-
-// //clickedText.classed("inactive", false).classed("active", true);
-  
-// var xScale = d3
-//     .scaleLinear()
-//     .domain([xMin, xMax])
-//     .range([margin + labelArea, width - margin]);
-//   var yScale = d3
-//     .scaleLinear()
-//     .domain([yMin, yMax])
-//     .range([height - margin - labelArea, margin]);
-
-//   var xAxis = d3.axisBottom(xScale);
-//   var yAxis = d3.axisLeft(yScale);
-
-//   function tickCount() {
-//     if (width <= 500) {
-//       xAxis.ticks(5);
-//       yAxis.ticks(5);
-//     }
-//     else {
-//       xAxis.ticks(10);
-//       yAxis.ticks(10);
-//     }
-//   }
-//   tickCount();
-
-//   svg
-//     .append("g")
-//     .call(xAxis)
-//     .attr("class", "xAxis")
-//     .attr("transform", "translate(0," + (height - margin - labelArea) + ")");
-//   svg
-//     .append("g")
-//     .call(yAxis)
-//     .attr("class", "yAxis")
-//     .attr("transform", "translate(" + (margin + labelArea) + ", 0)");
-
-//   }  
 });
