@@ -12,9 +12,7 @@ import sqlite3
 from flask_cors import CORS, cross_origin
 app = Flask(__name__)
 
-
 cors = CORS(app, resources={r"*": {"origins": "*"}})
-
 
 #################################################
 # Database Setup
@@ -40,6 +38,10 @@ Base.prepare(db.engine, reflect=True)
 @app.route('/')
 def index():
     return render_template('index.html')
+
+@app.route('/pie_chart')
+def pie_chart():
+    return render_template('pie_chart.html')
 
 @app.route("/json_endpoint")
 def json_data():
@@ -103,6 +105,7 @@ def get_audit_info():
     rows = data.fetchall()
     for_return = [dict(x) for x in rows]
     return jsonify(for_return)
+
 
 
 ### JSON Example Data ###
