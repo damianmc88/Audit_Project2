@@ -1,33 +1,35 @@
 h1{
-    color: #e84678;
-    background-color: rgb(12, 173, 167);
+    color: #fcc751;
+    background-color: #15b5ac;
     font-family: 'Avenir', Helvetica, sans-serif;
     font-weight: bold;
 }
 
 h2{
-    color: #e84678;
-    background-color:rgb(12, 173, 167);
+    color: #fcc751;
+    background-color:#15b5ac;
     font-family: 'Avenir', Helvetica, sans-serif;
     font-weight: bold;
 }
 
 h3{
-    color: rgb(12, 173, 167);
-    background-color:rgb(12, 173, 167);
+    color: #fcc751;
+    background-color:#15b5ac;
     font-family: 'Avenir', Helvetica, sans-serif;
     font-weight: bold;
     }
 
+
 p {
-    color: #e84678;
+    color: #fcc751;
     font-family: 'Avenir', Helvetica, sans-serif;
     font-size: 12;
-    background-color:rgb(12, 173, 167);
+    background-color:#15b5ac;
     line-height: 2;
  }
+
  .container{
-     background-color: rgb(12, 173, 167);
+     background-color: #15b5ac;
      padding-top: 30px;
      padding-left: 30px;
      padding-right: 30px;
@@ -35,16 +37,35 @@ p {
  }
 
  .navbar-brand {
-    color: rgb(12, 173, 167);
-    background-color: rgb(12, 173, 167);
+    color: #fcc751;
+    background-color: #15b5ac;
     font-family: 'Avenir', Helvetica, sans-serif;
     font-weight: bold;
 }
 
 .footer {
-    color: #e84678;
-    font-family: 'Avenir', Helvetica, sans-serif;
-    font-size: 12;
-    background-color:rgb(12, 173, 167);
-    line-height: 2;
+    background-color: #15b5ac;
 }
+
+.arc text {
+    font: 12px 'Avenier';
+    text-anchor: middle;
+}
+
+.arc path {
+    stroke: #ffffff;
+}
+
+.arc2 text {
+    font: 10px 'Avenir';
+    text-anchor: middle;
+}
+
+.arc2 path {
+    stroke: #ffffff
+}
+
+/* .table {
+    background-color: #15b5ac
+    font: white
+} */
