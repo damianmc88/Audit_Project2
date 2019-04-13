@@ -1,0 +1,1934 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA_Compatible" content="ie=edge">
+        <title>Company Data Analysis</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
+            media="screen">
+        <link rel="stylesheet" href="/static/styles/style.css">
+        </head>
+        
+    <body>
+        <nav class=nav class="navbar navbar-light" id="myNavBar">
+            <div class="container-fluid navbar-custom">
+                 <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button>
+                </div>
+                <div class = "container">
+                    <div class = "row">
+                        <!-- <div class="col-lg-8 col-sm-8"> -->
+                            <h1>Raw Data</h1>
+                            <!-- <hr>
+                            <li> <a href="pie_chart.html"></a></li> -->
+        <head>
+            <style>
+                table,th,td
+                    {
+                        border:2px solid white;
+                        }
+                        table
+                            {
+                            border-collapse:collapse;
+                            width:20%;
+                            }
+                        td
+                            {
+                            height:40px;
+                            }
+
+                        tr {background-color: #0a7986;
+                        color: white;}
+
+                        th
+                            {
+                            background-color:#0a7986;
+                            color:white;
+                            }
+                            </style>
+                            </head>
+                            <body>
+
+
+    <table class="table table-bordered table-hover table-condensed">
+                <thead><tr><th title="Field #1">audit_id</th>
+                <th title="Field #2">request_channel</th>
+                <th title="Field #3">audit_type</th>
+                <th title="Field #4">received_date</th>
+                <th title="Field #5">finished_date</th>
+                <th title="Field #6">num_records_reviewed</th>
+                <th title="Field #7">audit_team</th>
+                <th title="Field #8">tool</th>
+                </tr></thead>
+                <tbody><tr>
+                <td align="right">298</td>
+                <td>Grocery</td>
+                <td>Data_Extraction</td>
+                <td>1/2/18</td>
+                <td>1/10/18</td>
+                <td align="right">1437</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">299</td>
+                <td>Grocery</td>
+                <td>Product_Verification</td>
+                <td>1/4/15</td>
+                <td>1/19/18</td>
+                <td align="right">719</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">300</td>
+                <td>Grocery</td>
+                <td>Redemption_Verification</td>
+                <td>1/4/18</td>
+                <td>1/10/18</td>
+                <td align="right">551</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">301</td>
+                <td>Grocery</td>
+                <td>Redemption_Verification</td>
+                <td>1/5/18</td>
+                <td>1/12/18</td>
+                <td align="right">541</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">302</td>
+                <td>Grocery</td>
+                <td>Redemption_Verification</td>
+                <td>1/11/18</td>
+                <td>1/24/18</td>
+                <td align="right">399</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">303</td>
+                <td>Grocery</td>
+                <td>Product_Verification</td>
+                <td>1/15/18</td>
+                <td>1/18/18</td>
+                <td align="right">10</td>
+                <td>Leadership</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">304</td>
+                <td>Grocery</td>
+                <td>Redemption_Verification</td>
+                <td>1/16/18</td>
+                <td>1/18/18</td>
+                <td align="right">560</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">305</td>
+                <td>Grocery</td>
+                <td>Product_Verification</td>
+                <td>1/19/18</td>
+                <td>2/6/18</td>
+                <td align="right">400</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">306</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>1/22/18</td>
+                <td>2/1/18</td>
+                <td align="right">452</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">307</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>1/22/18</td>
+                <td>2/1/18</td>
+                <td align="right">249</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">308</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>1/22/18</td>
+                <td>2/1/18</td>
+                <td align="right">284</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">309</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>1/22/18</td>
+                <td>2/1/18</td>
+                <td align="right">1954</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">310</td>
+                <td>Retail</td>
+                <td>Data_Verification</td>
+                <td>1/23/18</td>
+                <td>2/13/18</td>
+                <td align="right">1662</td>
+                <td>Internal</td>
+                <td>Audit_Tool</td>
+                </tr>
+                <tr>
+                <td align="right">311</td>
+                <td>Retail</td>
+                <td>Data_Verification</td>
+                <td>1/23/18</td>
+                <td>2/1/18</td>
+                <td align="right">1083</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">312</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>1/26/18</td>
+                <td>2/12/18</td>
+                <td align="right">354</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">313</td>
+                <td>Retail</td>
+                <td>Data_Verification</td>
+                <td>1/26/18</td>
+                <td>2/5/18</td>
+                <td align="right">374</td>
+                <td>Internal</td>
+                <td>Audit_Tool</td>
+                </tr>
+                <tr>
+                <td align="right">314</td>
+                <td>Retail</td>
+                <td>Data_Verification</td>
+                <td>1/26/18</td>
+                <td>3/7/18</td>
+                <td align="right">433</td>
+                <td>Internal</td>
+                <td>Audit_Tool</td>
+                </tr>
+                <tr>
+                <td align="right">315</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>2/2/18</td>
+                <td>2/12/18</td>
+                <td align="right">617</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">316</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>2/2/18</td>
+                <td>2/12/18</td>
+                <td align="right">612</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">317</td>
+                <td>Alcohol</td>
+                <td>Data_Extraction</td>
+                <td>2/5/18</td>
+                <td>2/16/18</td>
+                <td align="right">677</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">318</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>2/6/18</td>
+                <td>2/16/18</td>
+                <td align="right">365</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">319</td>
+                <td>Grocery</td>
+                <td>Product_Verification</td>
+                <td>2/6/18</td>
+                <td>2/16/18</td>
+                <td align="right">398</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">320</td>
+                <td>Retail</td>
+                <td>Coupon_Stacking</td>
+                <td>2/7/18</td>
+                <td>2/14/18</td>
+                <td align="right">0</td>
+                <td>Internal</td>
+                <td>Looker</td>
+                </tr>
+                <tr>
+                <td align="right">321</td>
+                <td>Grocery</td>
+                <td>Product_Verification</td>
+                <td>2/7/18</td>
+                <td>3/1/18</td>
+                <td align="right">627</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">322</td>
+                <td>Retail</td>
+                <td>Data_Verification</td>
+                <td>2/8/18</td>
+                <td>3/5/18</td>
+                <td align="right">4104</td>
+                <td>Internal</td>
+                <td>Audit_Tool</td>
+                </tr>
+                <tr>
+                <td align="right">323</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>2/9/18</td>
+                <td>2/23/18</td>
+                <td align="right">707</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">324</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>2/9/18</td>
+                <td>2/23/18</td>
+                <td align="right">1422</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">325</td>
+                <td>Retail</td>
+                <td>Launch_Review</td>
+                <td>2/12/18</td>
+                <td>2/15/18</td>
+                <td align="right">0</td>
+                <td>Leadership</td>
+                <td>Looker</td>
+                </tr>
+                <tr>
+                <td align="right">326</td>
+                <td>Grocery</td>
+                <td>Product_Verification</td>
+                <td>2/16/18</td>
+                <td>2/17/18</td>
+                <td align="right">13</td>
+                <td>Leadership</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">327</td>
+                <td>Alcohol</td>
+                <td>Rebate_Stacking</td>
+                <td>2/19/18</td>
+                <td>2/19/18</td>
+                <td align="right">230</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">328</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>2/19/18</td>
+                <td>3/2/18</td>
+                <td align="right">800</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">329</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>2/19/18</td>
+                <td>3/26/18</td>
+                <td align="right">4367</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">330</td>
+                <td>Analytics</td>
+                <td>Coupon_Stacking</td>
+                <td>2/20/18</td>
+                <td>3/6/18</td>
+                <td align="right">20000</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">331</td>
+                <td>Grocery</td>
+                <td>Redemption_Verification</td>
+                <td>2/28/18</td>
+                <td>3/8/18</td>
+                <td align="right">344</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">332</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>3/2/18</td>
+                <td>3/22/18</td>
+                <td align="right">603</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">333</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>3/2/18</td>
+                <td>3/22/18</td>
+                <td align="right">662</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">334</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>3/2/18</td>
+                <td>3/22/18</td>
+                <td align="right">719</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">335</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>3/2/18</td>
+                <td>3/22/18</td>
+                <td align="right">612</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">337</td>
+                <td>Retail</td>
+                <td>Rebate_Stacking</td>
+                <td>3/9/18</td>
+                <td>3/14/18</td>
+                <td align="right">0</td>
+                <td>Leadership</td>
+                <td>Looker</td>
+                </tr>
+                <tr>
+                <td align="right">338</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>3/13/18</td>
+                <td>3/22/18</td>
+                <td align="right">1142</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">339</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>3/13/18</td>
+                <td>3/22/18</td>
+                <td align="right">382</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">340</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>3/13/18</td>
+                <td>3/22/18</td>
+                <td align="right">382</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">341</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>3/13/18</td>
+                <td>3/22/18</td>
+                <td align="right">382</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">342</td>
+                <td>Grocery</td>
+                <td>Rebate_Stacking</td>
+                <td>3/13/18</td>
+                <td>3/23/18</td>
+                <td align="right">616</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">343</td>
+                <td>Retail</td>
+                <td>Coupon_Stacking</td>
+                <td>3/13/18</td>
+                <td>3/29/18</td>
+                <td align="right">4335</td>
+                <td>Internal</td>
+                <td>Audit_Tool</td>
+                </tr>
+                <tr>
+                <td align="right">344</td>
+                <td>Retail</td>
+                <td>Data_Verification</td>
+                <td>3/13/18</td>
+                <td>4/9/18</td>
+                <td align="right">1377</td>
+                <td>Internal</td>
+                <td>Audit_Tool</td>
+                </tr>
+                <tr>
+                <td align="right">345</td>
+                <td>Retail</td>
+                <td>Launch_Review</td>
+                <td>3/14/18</td>
+                <td>3/27/18</td>
+                <td align="right">219</td>
+                <td>Internal</td>
+                <td>Audit_Tool</td>
+                </tr>
+                <tr>
+                <td align="right">346</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>3/14/18</td>
+                <td>3/28/18</td>
+                <td align="right">350</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">347</td>
+                <td>Retail</td>
+                <td>Coupon_Stacking</td>
+                <td>3/16/18</td>
+                <td>4/6/18</td>
+                <td align="right">275</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">348</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>3/23/18</td>
+                <td>3/29/18</td>
+                <td align="right">466</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">349</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>3/23/18</td>
+                <td>4/5/18</td>
+                <td align="right">301</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">350</td>
+                <td>Retail</td>
+                <td>Data_Verification</td>
+                <td>3/27/18</td>
+                <td>5/11/18</td>
+                <td align="right">374</td>
+                <td>Internal</td>
+                <td>Audit_Tool</td>
+                </tr>
+                <tr>
+                <td align="right">351</td>
+                <td>Retail</td>
+                <td>Data_Verification</td>
+                <td>3/27/18</td>
+                <td>6/8/18</td>
+                <td align="right">972</td>
+                <td>Internal</td>
+                <td>Audit_Tool</td>
+                </tr>
+                <tr>
+                <td align="right">352</td>
+                <td>Retail</td>
+                <td>Data_Verification</td>
+                <td>3/29/17</td>
+                <td>4/12/18</td>
+                <td align="right">578</td>
+                <td>Internal</td>
+                <td>Audit_Tool</td>
+                </tr>
+                <tr>
+                <td align="right">353</td>
+                <td>Retail</td>
+                <td>Data_Verification</td>
+                <td>4/4/18</td>
+                <td>4/18/18</td>
+                <td align="right">1344</td>
+                <td>Internal</td>
+                <td>Audit_Tool</td>
+                </tr>
+                <tr>
+                <td align="right">354</td>
+                <td>Retail</td>
+                <td>Launch_Review</td>
+                <td>4/5/18</td>
+                <td>4/12/18</td>
+                <td align="right">0</td>
+                <td>Leadership</td>
+                <td>Looker</td>
+                </tr>
+                <tr>
+                <td align="right">355</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>4/12/18</td>
+                <td>4/23/18</td>
+                <td align="right">364</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">356</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>4/16/18</td>
+                <td>4/25/18</td>
+                <td align="right">394</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">357</td>
+                <td>Retail</td>
+                <td>Launch_Review</td>
+                <td>4/18/18</td>
+                <td>5/1/18</td>
+                <td align="right">0</td>
+                <td>Leadership</td>
+                <td>Looker</td>
+                </tr>
+                <tr>
+                <td align="right">358</td>
+                <td>Alcohol</td>
+                <td>Data_Extraction</td>
+                <td>4/23/18</td>
+                <td>5/1/18</td>
+                <td align="right">543</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">359</td>
+                <td>Retail</td>
+                <td>Launch_Review</td>
+                <td>4/25/18</td>
+                <td>5/10/18</td>
+                <td align="right">0</td>
+                <td>Leadership</td>
+                <td>Looker</td>
+                </tr>
+                <tr>
+                <td align="right">360</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>4/25/18</td>
+                <td>5/1/18</td>
+                <td align="right">373</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">361</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>4/25/18</td>
+                <td>5/3/18</td>
+                <td align="right">715</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">362</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>4/26/18</td>
+                <td>5/1/18</td>
+                <td align="right">800</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">363</td>
+                <td>Grocery</td>
+                <td>Rebate_Stacking</td>
+                <td>4/30/18</td>
+                <td>5/10/18</td>
+                <td align="right">919</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">364</td>
+                <td>Alcohol</td>
+                <td>Data_Extraction</td>
+                <td>5/7/18</td>
+                <td>5/17/18</td>
+                <td align="right">700</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">365</td>
+                <td>Retail</td>
+                <td>Data_Verification</td>
+                <td>5/7/18</td>
+                <td>7/9/18</td>
+                <td align="right">505</td>
+                <td>Internal</td>
+                <td>Audit_Tool</td>
+                </tr>
+                <tr>
+                <td align="right">366</td>
+                <td>Retail</td>
+                <td>Launch_Review</td>
+                <td>5/11/18</td>
+                <td>5/15/18</td>
+                <td align="right">0</td>
+                <td>Leadership</td>
+                <td>Looker</td>
+                </tr>
+                <tr>
+                <td align="right">367</td>
+                <td>Grocery</td>
+                <td>Redemption_Verification</td>
+                <td>5/11/18</td>
+                <td>5/15/18</td>
+                <td align="right">362</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">368</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>5/16/18</td>
+                <td>5/25/18</td>
+                <td align="right">769</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">369</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>5/17/18</td>
+                <td>6/22/18</td>
+                <td align="right">731</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">370</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>5/17/18</td>
+                <td>6/11/18</td>
+                <td align="right">669</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">371</td>
+                <td>Alcohol</td>
+                <td>Data_Extraction</td>
+                <td>5/17/18</td>
+                <td>6/4/18</td>
+                <td align="right">417</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">372</td>
+                <td>Grocery</td>
+                <td>Redemption_Verification</td>
+                <td>5/18/18</td>
+                <td>6/4/18</td>
+                <td align="right">393</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">373</td>
+                <td>Alcohol</td>
+                <td>Data_Extraction</td>
+                <td>5/18/18</td>
+                <td>5/31/18</td>
+                <td align="right">497</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">374</td>
+                <td>Retail</td>
+                <td>Data_Verification</td>
+                <td>5/23/18</td>
+                <td>5/30/18</td>
+                <td align="right">5344</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">375</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>5/23/18</td>
+                <td>6/21/18</td>
+                <td align="right">365</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">376</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>5/29/18</td>
+                <td>6/22/18</td>
+                <td align="right">400</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">377</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>5/30/18</td>
+                <td>6/26/18</td>
+                <td align="right">307</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">378</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>6/1/18</td>
+                <td>6/4/18</td>
+                <td align="right">400</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">379</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>5/31/18</td>
+                <td>6/27/18</td>
+                <td align="right">306</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">380</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>5/31/18</td>
+                <td>2/27/18</td>
+                <td align="right">334</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">381</td>
+                <td>Analytics</td>
+                <td>Product_Verification</td>
+                <td>6/4/18</td>
+                <td>7/13/18</td>
+                <td align="right">15576</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">382</td>
+                <td>Grocery</td>
+                <td>Redemption_Verification</td>
+                <td>6/4/18</td>
+                <td>7/5/18</td>
+                <td align="right">716</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">383</td>
+                <td>Retail</td>
+                <td>Data_Verification</td>
+                <td>6/4/18</td>
+                <td>6/29/18</td>
+                <td align="right">0</td>
+                <td>Internal</td>
+                <td>Looker</td>
+                </tr>
+                <tr>
+                <td align="right">384</td>
+                <td>Grocery</td>
+                <td>Rebate_Stacking</td>
+                <td>6/7/18</td>
+                <td>7/2/18</td>
+                <td align="right">155</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">385</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>6/12/18</td>
+                <td>7/6/18</td>
+                <td align="right">310</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">386</td>
+                <td>Alcohol</td>
+                <td>Coupon_Stacking</td>
+                <td>6/21/18</td>
+                <td>7/5/18</td>
+                <td align="right">456</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">387</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>6/25/18</td>
+                <td>7/3/18</td>
+                <td align="right">800</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">388</td>
+                <td>Grocery</td>
+                <td>Redemption_Verification</td>
+                <td>6/28/18</td>
+                <td>7/17/18</td>
+                <td align="right">614</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">389</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>7/2/18</td>
+                <td>7/19/18</td>
+                <td align="right">366</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">391</td>
+                <td>Grocery</td>
+                <td>Product_Verification</td>
+                <td>7/12/18</td>
+                <td>8/8/18</td>
+                <td align="right">2979</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">392</td>
+                <td>Retail</td>
+                <td>Launch_Review</td>
+                <td>7/17/18</td>
+                <td>8/3/18</td>
+                <td align="right">0</td>
+                <td>Leadership</td>
+                <td>Looker</td>
+                </tr>
+                <tr>
+                <td align="right">393</td>
+                <td>Grocery</td>
+                <td>Redemption_Verification</td>
+                <td>7/17/18</td>
+                <td>7/24/18</td>
+                <td align="right">637</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">394</td>
+                <td>Grocery</td>
+                <td>Redemption_Verification</td>
+                <td>7/17/18</td>
+                <td>8/27/18</td>
+                <td align="right">1279</td>
+                <td>Internal</td>
+                <td>Audit_Tool</td>
+                </tr>
+                <tr>
+                <td align="right">395</td>
+                <td>Retail</td>
+                <td>Launch_Review</td>
+                <td>7/24/18</td>
+                <td>8/3/18</td>
+                <td align="right">599</td>
+                <td>Internal</td>
+                <td>Audit_Tool</td>
+                </tr>
+                <tr>
+                <td align="right">396</td>
+                <td>Alcohol</td>
+                <td>Data_Extraction</td>
+                <td>7/27/18</td>
+                <td>8/8/18</td>
+                <td align="right">484</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">397</td>
+                <td>Alcohol</td>
+                <td>Data_Extraction</td>
+                <td>7/30/18</td>
+                <td>8/7/18</td>
+                <td align="right">400</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">398</td>
+                <td>Retail</td>
+                <td>Data_Verification</td>
+                <td>7/31/18</td>
+                <td>8/15/18</td>
+                <td align="right">540</td>
+                <td>Internal</td>
+                <td>Audit_Tool</td>
+                </tr>
+                <tr>
+                <td align="right">399</td>
+                <td>Retail</td>
+                <td>Data_Verification</td>
+                <td>7/31/18</td>
+                <td>9/20/18</td>
+                <td align="right">632</td>
+                <td>Internal</td>
+                <td>Audit_Tool</td>
+                </tr>
+                <tr>
+                <td align="right">400</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>8/6/18</td>
+                <td>8/17/18</td>
+                <td align="right">162</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">401</td>
+                <td>Retail</td>
+                <td>Data_Verification</td>
+                <td>8/7/18</td>
+                <td>8/24/18</td>
+                <td align="right">1267</td>
+                <td>Internal</td>
+                <td>Audit_Tool</td>
+                </tr>
+                <tr>
+                <td align="right">402</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>8/7/18</td>
+                <td>8/23/18</td>
+                <td align="right">800</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">403</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>8/7/18</td>
+                <td>8/23/18</td>
+                <td align="right">800</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">404</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>8/7/18</td>
+                <td>8/27/18</td>
+                <td align="right">1200</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">405</td>
+                <td>Retail</td>
+                <td>Launch_Review</td>
+                <td>8/8/18</td>
+                <td>8/27/18</td>
+                <td align="right">0</td>
+                <td>Leadership</td>
+                <td>Looker</td>
+                </tr>
+                <tr>
+                <td align="right">406</td>
+                <td>Retail</td>
+                <td>Data_Verification</td>
+                <td>8/9/18</td>
+                <td>8/21/18</td>
+                <td align="right">2186</td>
+                <td>Combination</td>
+                <td>Audit_Tool</td>
+                </tr>
+                <tr>
+                <td align="right">407</td>
+                <td>Engineering</td>
+                <td>Coupon_Stacking</td>
+                <td>7/27/18</td>
+                <td>8/21/18</td>
+                <td align="right">1280</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">408</td>
+                <td>Retail</td>
+                <td>Launch_Review</td>
+                <td>8/14/18</td>
+                <td>8/27/18</td>
+                <td align="right">0</td>
+                <td>Leadership</td>
+                <td>Looker</td>
+                </tr>
+                <tr>
+                <td align="right">409</td>
+                <td>Retail</td>
+                <td>Launch_Review</td>
+                <td>8/14/18</td>
+                <td>8/28/18</td>
+                <td align="right">0</td>
+                <td>Leadership</td>
+                <td>Looker</td>
+                </tr>
+                <tr>
+                <td align="right">410</td>
+                <td>Retail</td>
+                <td>Launch_Review</td>
+                <td>8/14/18</td>
+                <td>8/28/18</td>
+                <td align="right">0</td>
+                <td>Leadership</td>
+                <td>Looker</td>
+                </tr>
+                <tr>
+                <td align="right">411</td>
+                <td>Grocery</td>
+                <td>Redemption_Verification</td>
+                <td>8/17/18</td>
+                <td>9/7/18</td>
+                <td align="right">6623</td>
+                <td>Combination</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">412</td>
+                <td>Alcohol</td>
+                <td>Data_Extraction</td>
+                <td>8/7/18</td>
+                <td>9/6/18</td>
+                <td align="right">4236</td>
+                <td>External</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">413</td>
+                <td>Analytics</td>
+                <td>Product_Verification</td>
+                <td>8/28/18</td>
+                <td>11/2/18</td>
+                <td align="right">928</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">414</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>8/22/18</td>
+                <td>9/14/18</td>
+                <td align="right">603</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">415</td>
+                <td>Retail</td>
+                <td>Data_Verification</td>
+                <td>8/27/18</td>
+                <td>9/19/18</td>
+                <td align="right">4812</td>
+                <td>External</td>
+                <td>Audit_Tool</td>
+                </tr>
+                <tr>
+                <td align="right">416</td>
+                <td>Analytics</td>
+                <td>Redemption_Verification</td>
+                <td>8/27/18</td>
+                <td>10/1/18</td>
+                <td align="right">17000</td>
+                <td>Combination</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">417</td>
+                <td>Retail</td>
+                <td>Data_Verification</td>
+                <td>8/28/18</td>
+                <td>9/21/18</td>
+                <td align="right">2845</td>
+                <td>Internal</td>
+                <td>Audit_Tool</td>
+                </tr>
+                <tr>
+                <td align="right">418</td>
+                <td>Alcohol</td>
+                <td>Data_Extraction</td>
+                <td>9/10/18</td>
+                <td>10/15/18</td>
+                <td align="right">250</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">419</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>9/11/18</td>
+                <td>10/5/18</td>
+                <td align="right">227</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">420</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>9/12/18</td>
+                <td>10/5/18</td>
+                <td align="right">800</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">421</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>9/12/18</td>
+                <td>10/12/18</td>
+                <td align="right">400</td>
+                <td>External</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">422</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>9/12/18</td>
+                <td>10/12/18</td>
+                <td align="right">400</td>
+                <td>External</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">423</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>9/12/18</td>
+                <td>10/12/18</td>
+                <td align="right">400</td>
+                <td>External</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">424</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>9/12/18</td>
+                <td>10/12/18</td>
+                <td align="right">400</td>
+                <td>External</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">425</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>9/12/18</td>
+                <td>10/12/18</td>
+                <td align="right">400</td>
+                <td>External</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">426</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>9/12/18</td>
+                <td>10/12/18</td>
+                <td align="right">400</td>
+                <td>External</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">427</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>9/12/18</td>
+                <td>10/15/18</td>
+                <td align="right">400</td>
+                <td>External</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">428</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>9/12/18</td>
+                <td>10/15/18</td>
+                <td align="right">400</td>
+                <td>External</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">429</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>9/12/18</td>
+                <td>10/15/18</td>
+                <td align="right">400</td>
+                <td>External</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">430</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>9/12/18</td>
+                <td>10/15/18</td>
+                <td align="right">400</td>
+                <td>External</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">431</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>9/12/18</td>
+                <td>10/15/18</td>
+                <td align="right">400</td>
+                <td>External</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">432</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>9/12/18</td>
+                <td>10/15/18</td>
+                <td align="right">400</td>
+                <td>External</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">433</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>9/12/18</td>
+                <td>10/19/18</td>
+                <td align="right">400</td>
+                <td>External</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">434</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>9/12/18</td>
+                <td>10/19/18</td>
+                <td align="right">400</td>
+                <td>External</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">435</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>9/12/18</td>
+                <td>10/19/18</td>
+                <td align="right">400</td>
+                <td>External</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">438</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>9/12/18</td>
+                <td>10/19/18</td>
+                <td align="right">400</td>
+                <td>External</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">439</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>9/12/18</td>
+                <td>10/19/18</td>
+                <td align="right">400</td>
+                <td>External</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">440</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>9/12/18</td>
+                <td>10/19/18</td>
+                <td align="right">400</td>
+                <td>External</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">441</td>
+                <td>Retail</td>
+                <td>Data_Verification</td>
+                <td>9/13/18</td>
+                <td>10/11/18</td>
+                <td align="right">638</td>
+                <td>Internal</td>
+                <td>Audit_Tool</td>
+                </tr>
+                <tr>
+                <td align="right">442</td>
+                <td>Retail</td>
+                <td>Launch_Review</td>
+                <td>9/18/18</td>
+                <td>10/8/18</td>
+                <td align="right">125</td>
+                <td>Internal</td>
+                <td>Audit_Tool</td>
+                </tr>
+                <tr>
+                <td align="right">443</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>9/18/18</td>
+                <td>11/13/18</td>
+                <td align="right">332</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">444</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>9/21/18</td>
+                <td>9/28/18</td>
+                <td align="right">222</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">445</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>9/21/18</td>
+                <td>10/4/18</td>
+                <td align="right">768</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">446</td>
+                <td>Retail</td>
+                <td>Launch_Review</td>
+                <td>9/24/18</td>
+                <td>10/15/18</td>
+                <td align="right">0</td>
+                <td>Leadership</td>
+                <td>Looker</td>
+                </tr>
+                <tr>
+                <td align="right">447</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>10/1/18</td>
+                <td>11/9/18</td>
+                <td align="right">508</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">448</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>10/4/18</td>
+                <td>1/3/19</td>
+                <td align="right">5816</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">449</td>
+                <td>Alcohol</td>
+                <td>Data_Extraction</td>
+                <td>10/8/18</td>
+                <td>11/20/18</td>
+                <td align="right">373</td>
+                <td>External</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">450</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>10/8/18</td>
+                <td>10/25/18</td>
+                <td align="right">412</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">451</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>10/8/18</td>
+                <td>10/25/18</td>
+                <td align="right">1121</td>
+                <td>External</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">452</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>10/8/18</td>
+                <td>10/30/18</td>
+                <td align="right">1076</td>
+                <td>External</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">453</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>10/8/18</td>
+                <td>10/31/18</td>
+                <td align="right">968</td>
+                <td>External</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">454</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>10/8/18</td>
+                <td>10/31/18</td>
+                <td align="right">1047</td>
+                <td>External</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">455</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>10/8/18</td>
+                <td>11/1/18</td>
+                <td align="right">674</td>
+                <td>External</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">456</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>10/8/18</td>
+                <td>11/2/18</td>
+                <td align="right">627</td>
+                <td>External</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">457</td>
+                <td>Retail</td>
+                <td>Launch_Review</td>
+                <td>10/9/18</td>
+                <td>11/15/18</td>
+                <td align="right">0</td>
+                <td>Leadership</td>
+                <td>Looker</td>
+                </tr>
+                <tr>
+                <td align="right">458</td>
+                <td>Retail</td>
+                <td>Data_Verification</td>
+                <td>10/11/18</td>
+                <td>11/20/18</td>
+                <td align="right">270</td>
+                <td>Internal</td>
+                <td>Audit_Tool</td>
+                </tr>
+                <tr>
+                <td align="right">459</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>10/12/18</td>
+                <td>10/29/18</td>
+                <td align="right">187</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">460</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>10/12/18</td>
+                <td>11/29/18</td>
+                <td align="right">401</td>
+                <td>External</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">461</td>
+                <td>Retail</td>
+                <td>Data_Verification</td>
+                <td>10/15/18</td>
+                <td>11/15/18</td>
+                <td align="right">2840</td>
+                <td>External</td>
+                <td>Audit_Tool</td>
+                </tr>
+                <tr>
+                <td align="right">462</td>
+                <td>Grocery</td>
+                <td>Redemption_Verification</td>
+                <td>10/15/18</td>
+                <td>12/17/18</td>
+                <td align="right">4346</td>
+                <td>External</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">463</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>10/15/18</td>
+                <td>11/8/18</td>
+                <td align="right">952</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">464</td>
+                <td>Alcohol</td>
+                <td>Data_Extraction</td>
+                <td>10/15/18</td>
+                <td>11/27/18</td>
+                <td align="right">400</td>
+                <td>External</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">465</td>
+                <td>Alcohol</td>
+                <td>Data_Extraction</td>
+                <td>10/15/18</td>
+                <td>12/19/18</td>
+                <td align="right">260</td>
+                <td>External</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">466</td>
+                <td>Retail</td>
+                <td>Data_Verification</td>
+                <td>10/15/18</td>
+                <td>11/26/18</td>
+                <td align="right">531</td>
+                <td>External</td>
+                <td>Audit_Tool</td>
+                </tr>
+                <tr>
+                <td align="right">467</td>
+                <td>Alcohol</td>
+                <td>Data_Extraction</td>
+                <td>10/19/18</td>
+                <td>12/10/18</td>
+                <td align="right">400</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">468</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>10/22/18</td>
+                <td>11/6/18</td>
+                <td align="right">363</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">469</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>10/23/18</td>
+                <td>10/29/18</td>
+                <td align="right">348</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">470</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>10/23/18</td>
+                <td>10/29/18</td>
+                <td align="right">319</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">471</td>
+                <td>Retail</td>
+                <td>Rebate_Stacking</td>
+                <td>10/24/18</td>
+                <td>10/14/18</td>
+                <td align="right">0</td>
+                <td>Internal</td>
+                <td>Looker</td>
+                </tr>
+                <tr>
+                <td align="right">472</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>10/31/18</td>
+                <td>11/30/18</td>
+                <td align="right">62</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">473</td>
+                <td>Retail</td>
+                <td>Data_Verification</td>
+                <td>11/2/18</td>
+                <td>12/5/18</td>
+                <td align="right">1446</td>
+                <td>Internal</td>
+                <td>Audit_Tool</td>
+                </tr>
+                <tr>
+                <td align="right">474</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>11/6/18</td>
+                <td>1/29/19</td>
+                <td align="right">400</td>
+                <td>External</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">475</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>11/9/18</td>
+                <td>11/19/18</td>
+                <td align="right">2904</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">476</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>11/15/18</td>
+                <td>12/24/18</td>
+                <td align="right">607</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">477</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>11/19/18</td>
+                <td>11/26/18</td>
+                <td align="right">21</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">478</td>
+                <td>Alcohol</td>
+                <td>Redemption_Verification</td>
+                <td>11/28/18</td>
+                <td>12/21/18</td>
+                <td align="right">43</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">479</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>11/28/18</td>
+                <td>2/5/19</td>
+                <td align="right">1050</td>
+                <td>External</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">480</td>
+                <td>Grocery</td>
+                <td>Coupon_Stacking</td>
+                <td>11/30/18</td>
+                <td>1/30/19</td>
+                <td align="right">1085</td>
+                <td>External</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">481</td>
+                <td>Retail</td>
+                <td>Data_Verification</td>
+                <td>11/30/18</td>
+                <td>1/14/19</td>
+                <td align="right">13398</td>
+                <td>Combination</td>
+                <td>Audit_Tool</td>
+                </tr>
+                <tr>
+                <td align="right">482</td>
+                <td>Retail</td>
+                <td>Data_Verification</td>
+                <td>12/3/18</td>
+                <td>1/17/19</td>
+                <td align="right">2429</td>
+                <td>External</td>
+                <td>Audit_Tool</td>
+                </tr>
+                <tr>
+                <td align="right">483</td>
+                <td>Grocery</td>
+                <td>Redemption_Verification</td>
+                <td>12/6/18</td>
+                <td>12/19/18</td>
+                <td align="right">124</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">484</td>
+                <td>Grocery</td>
+                <td>Redemption_Verification</td>
+                <td>12/10/18</td>
+                <td>1/11/19</td>
+                <td align="right">1218</td>
+                <td>Internal</td>
+                <td>Manual</td>
+                </tr>
+                <tr>
+                <td align="right">488</td>
+                <td>Alcohol</td>
+                <td>Coupon_Stacking</td>
+                <td>12/14/18</td>
+                <td>12/18/18</td>
+                <td align="right">0</td>
+                <td>Leadership</td>
+                <td>Looker</td>
+                </tr>
+                <tr>
+                <td align="right">489</td>
+                <td>Retail</td>
+                <td>Data_Verification</td>
+                <td>12/17/18</td>
+                <td>2/6/19</td>
+                <td align="right">1745</td>
+                <td>External</td>
+                <td>Audit_Tool</td>
+                </tr>
+                <tr>
+                <td align="right">490</td>
+                <td>Retail</td>
+                <td>Data_Verification</td>
+                <td>12/20/18</td>
+                <td>2/12/19</td>
+                <td align="right">396</td>
+                <td>External</td>
+                <td>Audit_Tool</td>
+                </font>
+                </tr>
+                </tbody></table>
+                </body>
+                </head>
