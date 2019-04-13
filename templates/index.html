@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA_Compatible" content="ie=edge">
-    <title>Company Data Analysis</title>
+    <title>Company Audit Analysis</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+    <script src="/static/d3-tip.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
     media="screen">
     <link rel="stylesheet" href="/static/styles/style.css">
@@ -23,7 +24,7 @@
                     <span class="icon-bar"></span>
                 </button>
             </div>
-            <div class="collapse navbar-collapse">
+            <!-- <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right" navbar-right-custom>
                     </li>
                     <li class="dropdown">
@@ -36,14 +37,14 @@
                     <li><a href=""> </a></li>
                 </ul>
             </div>
-        </div>
+        </div> -->
     </nav>
 
     <div class="container">
         <section class="row">
             <div class="col-sm-8">
                 <article class="description-content">
-                    <h1 class="description-header">Company Data Analysis</h1>
+                    <h1 class="description-header">Company Audit Analysis</h1>
                     <!-- <div class="container"></div> -->
                     <div id="scatter"> </div>
                     </article>
@@ -54,19 +55,24 @@
                     <h2 class="imageNav-header">Visualizations</h2>
                     <hr />
                     <div id="images">
-                        <a href="data_table.html"><img src="Fig1.png" alt="Data" width="140"
-                                height="120"></a>
-                        <a href="visualizations_2.html"><img src="Fig2.png" alt="Visualizations" width="140"
-                                height="120"></a>
+                        <a href="data_table"><img src="flamingo.png" 
+                            alt="Data Table" width = "140" height="120"></a>
+                        <a href="pie_chart"><img src="mountain.png" 
+                            alt="Pie Chart 1" width="140" height="120"></a>
+                            <a href="pie_chart2"><img src="mountain.png" 
+                                alt="Pie Chart 2" width="140" height="120"></a>
+                            <a href="goals"><img src="rose.jpeg" 
+                                alt="Goals" width="140" height="120"></a>
                     </div>
                 </div>
                 </article>
             </div>
         </section>
+        
         <footer class="footer navbar-fixed-bottom">
             <div class="two-toned-footer-color"></div>
-            <p class="text-muted text-muted-footer text-center">
-                &copy; University of Denver Data Analytics Project 2 2019
+            <p class="text-center">
+                &copy; University of Denver Data Analytics Project 2 - 2019
             </p>
         </footer>
     </div>
