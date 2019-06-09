@@ -9,6 +9,7 @@
   - CSS
   - Flask
   - JavaScript
+  - BootStrap
   
 ### Data Table
 
