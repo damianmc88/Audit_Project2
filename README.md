@@ -8,7 +8,7 @@
   - HTML
   - CSS
   - Flask
-  - BeautifulSoup
+  - JavaScript
   
 ### Data Table
 
